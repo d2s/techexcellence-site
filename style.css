@@ -1,10 +1,10 @@
 html {
   font-family: 'Raleway', sans-serif;
-
 }
 
 h1 {
   font-family: 'Permanent Marker', cursive;
+  //color: #007CB7
 }
 
 h2 {
@@ -12,15 +12,22 @@ h2 {
   font-size: 10
 }
 
+img {
+  border-radius: 100%;
+}
+
+a:visited {
+  color: #007CB7
+}
 
 .content p {
 	  margin: 0 50px;
-	  margin-bottom: 20px; 
+	  margin-bottom: 20px;
 	}
-	
+
 .content h1, .content h2, .content h3, .content ul{
 	  margin: 0 50px;
-	  margin-bottom: 10px; 
+	  margin-bottom: 10px;
 	}
 
 .mainnav ul {
@@ -30,12 +37,12 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end; }
-  
+
 .mainnav li {
           margin: 0 10px; }
-		  
+
 .mainnav ul {
-    border-bottom: 4px solid #dc25ae; }
+    border-bottom: 4px solid #FA7268; }
 
 .mainnav a {
   text-transform: uppercase;
@@ -51,11 +58,11 @@ h2 {
 .mainnav a.selected, .mainnav a.selected:hover {
   color: #000000;
   border-bottom: 4px solid #000000;
-  margin-bottom: -4px; }		
+  margin-bottom: -4px; }
 
 .button ul {
-    border-bottom: 4px solid #dc25ae; }
-   
+    border-bottom: 4px solid #007CB7; }
+
 .button {
     margin: 40px;
 }
@@ -65,7 +72,7 @@ h2 {
   font-size: 13px;
   padding: 12px 35px;
   margin: 10px;
-  background-color: #dc25ae;
+  background-color: #007CB7;
 
   letter-spacing: 1px;
   text-transform: uppercase;
