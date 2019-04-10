@@ -1,15 +1,17 @@
-html {
-  font-family: 'Raleway', sans-serif;
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
+
 h1 {
-  font-family: 'Permanent Marker', cursive;
-  //color: #007CB7
+  /* font-family: "Permanent Marker", cursive; */
+  font-size: 34px;
+  font-weight: 500;
 }
 
 h2 {
-  font-family: 'Permanent Marker', cursive;
-  font-size: 10
+  font-family: "Permanent Marker", cursive;
+  font-size: 10;
 }
 
 img {
@@ -17,18 +19,21 @@ img {
 }
 
 a:visited {
-  color: #007CB7
+  color: #007cb7;
 }
 
 .content p {
-	  margin: 0 50px;
-	  margin-bottom: 20px;
-	}
+  margin: 0 50px;
+  margin-bottom: 20px;
+}
 
-.content h1, .content h2, .content h3, .content ul{
-	  margin: 0 50px;
-	  margin-bottom: 10px;
-	}
+.content h1,
+.content h2,
+.content h3,
+.content ul {
+  margin: 0 50px;
+  margin-bottom: 10px;
+}
 
 .mainnav ul {
   list-style: none;
@@ -36,35 +41,43 @@ a:visited {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end; }
+  justify-content: flex-end;
+}
 
 .mainnav li {
-          margin: 0 10px; }
+  margin: 0 10px;
+}
 
 .mainnav ul {
-    border-bottom: 4px solid #FA7268; }
+  border-bottom: 4px solid #fa7268;
+}
 
 .mainnav a {
   text-transform: uppercase;
   text-decoration: none;
   display: block;
   color: #000000;
-  padding: 10px 0; }
+  padding: 10px 0;
+}
 
 .mainnav a:hover {
   border-bottom: 4px solid #000000;
-  margin-bottom: -4px; }
+  margin-bottom: -4px;
+}
 
-.mainnav a.selected, .mainnav a.selected:hover {
+.mainnav a.selected,
+.mainnav a.selected:hover {
   color: #000000;
   border-bottom: 4px solid #000000;
-  margin-bottom: -4px; }
+  margin-bottom: -4px;
+}
 
 .button ul {
-    border-bottom: 4px solid #007CB7; }
+  border-bottom: 4px solid #007cb7;
+}
 
 .button {
-    margin: 40px;
+  margin: 40px;
 }
 
 .button a {
@@ -72,7 +85,7 @@ a:visited {
   font-size: 13px;
   padding: 12px 35px;
   margin: 10px;
-  background-color: #007CB7;
+  background-color: #007cb7;
 
   letter-spacing: 1px;
   text-transform: uppercase;
