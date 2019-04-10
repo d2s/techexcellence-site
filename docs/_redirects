@@ -1,0 +1,16 @@
+# Netlify configuration:
+# Redirects
+# 
+# More details:
+# - https://www.netlify.com/docs/redirects/
+#
+# NOTE: Before pushing this to the production, test rules with:
+# - https://play.netlify.com/redirects
+#
+
+# Redirect individual pages to new locations (301 Moved Permanently)
+/index.html         /               301!
+/conference.html    /conference     301!
+/training.html      /training       301!
+
+

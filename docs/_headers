@@ -1,0 +1,14 @@
+# Netlify configuration:
+# Headers and Basic Authentication
+# 
+# More details:
+# - https://www.netlify.com/docs/headers-and-basic-auth/
+#
+# NOTE: Before pushing this to the production, test rules with:
+# - https://play.netlify.com/headers
+#
+
+/*
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
+  Cache-Control: public, max-age=0, must-revalidate, no-transform
