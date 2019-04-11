@@ -1,48 +1,96 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="UTF-8">
+    <link rel="dns-prefetch" href="https://holvi.com">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tech Excellence events</title>
-    <link type="text/css" rel="stylesheet" href="style.css" media="all"/>
+
+    <link rel="preload" href="/assets/css/normalize.css" as="style">
+    <link rel="preload" href="/assets/css/style.css" as="style">
+    <!-- <link rel="preload" href="/assets/js/main.js" as="script"> -->
+
+    <link type="text/css" rel="stylesheet" href="/assets/css/normalize.css" media="all"/>
+    <link type="text/css" rel="stylesheet" href="/assets/css/style.css" media="all"/>
+
+    <!-- common social tags -->
+    <meta name="title" content="Tech Excellence events">
+    <!-- OpenGraph http://ogp.me/ -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Tech Excellence">
+
+    <!-- Twitter Card -->
+    <!-- https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started.html -->
+    <!-- - https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/summary -->
+    <meta name="twitter:card" content="summary">
+
+    <!-- document-specific social tags -->
+    <meta property="og:title" content="Tech Excellence events">
+    <meta name="twitter:title" content="Tech Excellence events">
+
+    <!-- document-specific description of the contents -->
+    <meta property="og:description" content="...">
+    <meta name="twitter:description" content="...">
+    <meta name="description" content="...">
+
   </head>
 
   <body>
 
-    <nav class="mainnav">
-      <ul>
-        <li class="selected">
-          <a href="/">Home</a>
-        </li>
-        <li>
-          <a href="/conference">Conference</a>
-        </li>
-        <li>
-          <a href="/training">Training</a>
-        </li>
-      </ul>
-    </nav>
-
-    <content class="content">
-      <h1>Tech Excellence</h1>
-
-      <p>Tech Excellence is a series of events on technical agile and software crafting.
-      </p>
-
-      <ul>
-        <li>
-          <a href="conference.html">Tech Excellence Conference - Helsinki, Finland June 3rd</a>
-        </li>
-        <li>
-          <a href="training.html">Tech Excellence Training - Event Storming with Tobias Goeschel May 27-28th</li>
+    <header role="banner">
+      <!-- Logo and things can go here -->
+      <nav role="navigation" class="mainnav">
+        <ul>
+          <li class="selected">
+            <a href="/" class="selected">Home</a>
+          </li>
           <li>
-            <a href="https://www.meetup.com/Tech-Excellence-Finland/">Tech Excellence Finland Meetup</a>
+            <a href="/conference">Conference</a>
+          </li>
+          <li>
+            <a href="/training">Training</a>
           </li>
         </ul>
+      </nav>
+    </header>
 
-        <div class="button">
-          <a href="https://holvi.com/shop/TechExcellence/">Buy Tickets for the Events</a>
-        </div>
+    <main role="main" class="content">
 
-      </content>
+      <section>
+        <h1>Tech Excellence</h1>
+
+        <p class="intro">
+          Tech Excellence is a series of events on technical agile and software crafting.
+        </p>
+      </section>
+
+      <section>
+        <ul>
+          <li>
+            <a href="conference.html">Tech Excellence Conference - Helsinki, Finland June 3rd</a>
+          </li>
+          <li>
+            <a href="training.html">Tech Excellence Training - Event Storming with Tobias Goeschel May 27-28th</li>
+            <li>
+              <a href="https://www.meetup.com/Tech-Excellence-Finland/">Tech Excellence Finland Meetup</a>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <div class="button">
+            <a tabindex="0" role="button" href="https://holvi.com/shop/TechExcellence/">Buy Tickets for the Events</a>
+          </div>
+        </section>
+
+      </main>
+
+      <footer role="contentinfo">
+        <!-- Copyright statement, etc -->
+        <p>Footer contents</p>
+      </footer>
+
     </body>
   </html>
