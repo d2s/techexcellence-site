@@ -10,16 +10,13 @@ html {
   overflow-y: scroll;
 }
 
-
 /* Scrollbar adjustments */
 /*  */
 /* - https://css-tricks.com/the-current-state-of-styling-scrollbars/ */
 
-
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Helvetica,
+    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 
   margin-top: 0;
   padding-bottom: 100px;
@@ -35,9 +32,8 @@ h1 {
   line-height: 2em;
   padding: 0.5em 20px;
   margin: 0;
-  background-color: #fee;
-  border-bottom: 2px solid #ccc;
   text-align: center;
+  background-image: linear-gradient(to top, #ffffff 0%, #ffcdb8 100%);
 }
 
 /* - If h2 element is located right after h1, remove top margin */
@@ -64,10 +60,15 @@ h2 small {
 
 /* Heading level 3 */
 h3 {
+  margin-top: 40px;
   font-size: 28px;
-  padding: 10px 20px;
-  border-bottom: 2px solid lightgray;
-  background-color: #fee;
+  padding: 40px 20px 10px;
+  border-bottom: 2px solid #ddd;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 205, 184, 0.6) 100%
+  );
 }
 
 /* Heading level 4 */
@@ -118,6 +119,9 @@ footer {
   text-align: center;
 }
 
+strong {
+  font-weight: 500;
+}
 
 p.intro {
   display: block;
@@ -132,6 +136,7 @@ p.intro {
 .content p {
   margin: 0 50px;
   margin-bottom: 20px;
+  line-height: 1.5em;
 }
 
 /* Unordered lists */
@@ -237,12 +242,9 @@ p.intro {
   box-shadow: 0 0 10px 2px rgba(120, 120, 120, 0.5), inset 0 0 15px rgba(50, 50, 50, 0.5);
 }
 
-
-
 /* For debugging section areas: */
 /*
 section {
   outline: 2px solid blue;
 }
 */
-
