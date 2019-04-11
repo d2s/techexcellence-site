@@ -125,8 +125,10 @@ p.intro {
 }
 
 /* Unordered lists */
+/* - Increase line height for the unordered list items */
 .content ul {
   margin: 1em;
+  line-height: 1.8em;
 }
 
 /* Main navigation */
