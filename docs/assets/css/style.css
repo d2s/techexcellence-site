@@ -5,9 +5,11 @@
 }
 
 html {
-  background-color: rgb(174, 203, 226);
   padding: 0 6px;
   overflow-y: scroll;
+
+  background-color: #c8ccce;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23334871' fill-opacity='0.25' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 }
 
 /* Scrollbar adjustments */
@@ -107,16 +109,19 @@ a:visited {
 }
 
 .content {
-  padding-bottom: 1em;
+  padding-bottom: 80px;
   background-color: #fff;
+  box-shadow: 0 0 80px rgba(100, 100, 100, 0.3);
 }
 
 footer {
   padding: 1em;
-  background-color: #fff;
+  background-color: rgb(245, 245, 245);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   text-align: center;
+
+  box-shadow: 0 0 80px rgba(100, 100, 100, 0.3);
 }
 
 strong {
