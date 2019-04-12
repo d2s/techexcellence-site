@@ -1,2 +1,34 @@
+# Include your project-specific ignores in this file
+# Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
+# Useful .gitignore templates: https://github.com/github/gitignore
 
+
+# dependencies
+node_modules/
+package-lock.json
+
+# testing
+coverage/
+.nyc_output/
+
+# production
+/_site/
+/build
+/styleguide
+
+
+# Environmental variables
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 .netlify/state.json
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+debug.log*
+
+# Various other files
+.DS_Store
