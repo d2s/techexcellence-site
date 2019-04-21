@@ -1,0 +1,499 @@
+* {
+  /* - Enable outline for debugging layout structure issues */
+  /* outline: 1px solid #2980b9!important; */
+  /* box-sizing: border-box; */
+}
+
+html {
+  font-size: 1em;
+  line-height: 1.4;
+
+  padding: 0 6px;
+  overflow-y: scroll;
+
+  background-color: #c8ccce;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23334871' fill-opacity='0.25' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+/* Scrollbar adjustments */
+/*  */
+/* - https://css-tricks.com/the-current-state-of-styling-scrollbars/ */
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Helvetica,
+    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+
+  margin-top: 0;
+  padding-bottom: 100px;
+
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #111;
+  color: #fff;
+  text-shadow: none;
+}
+
+::selection {
+  background: #111;
+  color: #fff;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* Heading level 1 */
+h1 {
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 2em;
+  padding: 0.5em 20px;
+  margin: 0;
+  text-align: center;
+  background-image: linear-gradient(to top, #ffffff 0%, #ffcdb8 100%);
+}
+
+/* - If h2 element is located right after h1, remove top margin */
+h1 + h2 {
+  margin-top: 0;
+}
+
+/* Heading level 2 */
+h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.4em;
+  padding: 0.5em 20px;
+  border-bottom: 4px solid lightgray;
+  background-color: #eee;
+  text-align: center;
+}
+
+h2 small {
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 1.5em;
+}
+
+/* Heading level 3 */
+h3 {
+  margin-top: 40px;
+  font-size: 28px;
+  padding: 40px 20px 10px;
+  border-bottom: 2px solid #ddd;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 205, 184, 0.6) 100%
+  );
+}
+
+/* Heading level 4 */
+h4 {
+  font-size: 22px;
+  margin-top: 1em;
+  padding: 5px 20px;
+  border-bottom: 1px solid lightgray;
+  background-color: #eee;
+}
+
+/* Heading level 5 */
+h5 {
+  font-size: 18px;
+  margin-top: 20px;
+  padding: 5px 30px;
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 10px;
+}
+
+/* Heading level 6 */
+h6 {
+  font-size: 16px;
+  margin-top: 15px;
+  padding: 5px 30px;
+}
+
+/* Image elements */
+img {
+  border-radius: 100%;
+  max-width: 100%;
+}
+
+a:visited {
+  color: #007cb7;
+}
+
+.content {
+  padding-bottom: 80px;
+  background-color: #fff;
+  box-shadow: 0 0 80px rgba(100, 100, 100, 0.3);
+}
+
+footer {
+  padding: 1em;
+  background-color: rgb(245, 245, 245);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  text-align: center;
+
+  box-shadow: 0 0 80px rgba(100, 100, 100, 0.3);
+}
+
+strong {
+  font-weight: 500;
+}
+
+p.intro {
+  display: block;
+  clear: both;
+  padding: 30px 0;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.6em;
+  max-width: 20em;
+}
+
+.content p {
+  margin: 0 50px;
+  margin-bottom: 20px;
+  line-height: 1.5em;
+}
+
+/* Unordered lists */
+/* - Increase line height for the unordered list items */
+.content ul {
+  margin: 1em;
+  line-height: 1.8em;
+}
+
+/* Main navigation */
+.mainnav {
+  background-color: rgb(243, 242, 242);
+  border-bottom: 4px solid #e6612d;
+  border-top: 20px solid rgb(17, 17, 17);
+}
+
+/* Unordered list on the main navigation */
+.mainnav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end; */
+}
+
+/* List item on the main navigation */
+.mainnav li {
+  margin: 0;
+}
+
+/* Link item on the main navigation */
+.mainnav a {
+  background-color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+  color: #000;
+  padding: 10px 20px;
+  font-weight: 400;
+  min-width: 80px;
+  text-align: center;
+  box-shadow: inset 0 0 2px rgba(150, 150, 150, 0.4);
+}
+
+.mainnav a:hover,
+.mainnav a:focus {
+  background-color: #ccc;
+  border-bottom: 4px solid rgb(0, 0, 0);
+  margin-bottom: -4px;
+}
+
+.mainnav a.selected {
+  background-color: #333;
+  color: #fff;
+  border-bottom: 4px solid #333;
+  margin-bottom: -4px;
+  font-weight: 500;
+  box-shadow: inset 0 0 3px rgba(30, 30, 30, 0.8);
+}
+
+/* - Accessibility by having focus styles */
+.mainnav a.selected:hover,
+.mainnav a.selected:focus {
+  background-color: #222;
+  border-bottom: 4px solid rgb(0, 0, 0);
+}
+
+/* BUTTONS */
+.button ul {
+  border-bottom: 4px solid #007cb7;
+}
+
+.button {
+  margin: 40px;
+}
+
+.button a {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 12px 35px;
+  margin: 10px;
+  background-color: #007cb7;
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  white-space: nowrap;
+  box-shadow: 0 0 10px 2px rgba(200, 200, 200, 0.8), inset 0 0 15px rgba(50, 50, 50, 0.2);
+}
+
+/* - Accessibility by having focus styles */
+.button a:hover,
+.button a:active,
+.button a:focus {
+  background-color: #005983;
+  box-shadow: 0 0 10px 2px rgba(120, 120, 120, 0.5), inset 0 0 15px rgba(50, 50, 50, 0.5);
+}
+
+/* For debugging section areas: */
+/*
+section {
+  outline: 2px solid blue;
+}
+*/
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+  display: none !important;
+}
+
+/*
+* Hide only visually, but have it available for screen readers:
+* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*
+* 1. For long content, line feeds are not interpreted as spaces and small width
+*    causes content to wrap 1 word per line:
+*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+*/
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap; /* 1 */
+}
+
+/*
+* Extends the .visuallyhidden class to allow the element
+* to be focusable when navigated to via the keyboard:
+* https://www.drupal.org/node/897638
+*/
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+  white-space: inherit;
+}
+
+/*
+* Hide visually and from screen readers, but maintain layout
+*/
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix:before,
+.clearfix:after {
+  content: ' '; /* 1 */
+  display: table; /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important; /* Black prints faster */
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: ' (' attr(href) ')';
+  }
+
+  abbr[title]:after {
+    content: ' (' attr(title) ')';
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+
+  a[href^='#']:after,
+  a[href^='javascript:']:after {
+    content: '';
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
