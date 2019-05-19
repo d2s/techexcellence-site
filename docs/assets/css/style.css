@@ -30,6 +30,15 @@ body {
   margin: 0 auto;
 }
 
+table {
+  max-width: 80%;
+}
+
+td {
+  width: 30%
+}
+
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
