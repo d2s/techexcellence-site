@@ -177,6 +177,10 @@ img {
   max-width: 100%;
 }
 
+image.logo {
+  border-radius: 0%
+}
+
 a:visited {
   color: #007cb7;
 }
