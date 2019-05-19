@@ -108,7 +108,7 @@ h1 {
   padding: 0.5em 20px;
   margin: 0;
   text-align: center;
-  background-image: linear-gradient(to top, #ffffff 0%, #ffcdb8 100%);
+  background-image: linear-gradient(to top, #ffffff 0%, #46C6C6 100%);
 }
 
 /* - If h2 element is located right after h1, remove top margin */
