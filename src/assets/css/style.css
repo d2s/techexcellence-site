@@ -11,7 +11,7 @@ html {
   padding: 0 6px;
   overflow-y: scroll;
 
-  background-color: #c8ccce;
+  background-color: #46C6C6;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23334871' fill-opacity='0.25' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 }
 
@@ -29,6 +29,8 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
+
+
 
 /*
  * Remove text-shadow in selection highlight:
@@ -102,7 +104,7 @@ h1 {
   padding: 0.5em 20px;
   margin: 0;
   text-align: center;
-  background-image: linear-gradient(to top, #ffffff 0%, #ffcdb8 100%);
+  background-image: linear-gradient(to top, #ffffff 0%, #46C6C6 100%);
 }
 
 /* - If h2 element is located right after h1, remove top margin */
@@ -171,6 +173,12 @@ img {
   max-width: 100%;
 }
 
+.logo {
+  width: 100%;
+}
+
+
+/* Visited links */
 a:visited {
   color: #007cb7;
 }
@@ -221,7 +229,7 @@ p.intro {
 /* Main navigation */
 .mainnav {
   background-color: rgb(243, 242, 242);
-  border-bottom: 4px solid #e6612d;
+  border-bottom: 4px solid #32a4a4;
   border-top: 20px solid rgb(17, 17, 17);
 }
 
