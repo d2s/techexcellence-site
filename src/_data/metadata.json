@@ -1,0 +1,16 @@
+{
+  "title": "Tech Excellence",
+  "url": "https://techexcellence.dev/",
+  "description": "Tech Excellence is a series of events on technical agile and software crafting.",
+  "feed": {
+    "subtitle": "Tech Excellence is a series of events on technical agile and software crafting.",
+    "filename": "feed.xml",
+    "path": "/feed/feed.xml",
+    "url": "https://techexcellence.dev/feed/feed.xml",
+    "id": "https://techexcellence.dev/"
+  },
+  "author": {
+    "name": "Tech Excellence",
+    "email": "youremailaddress@example.com"
+  }
+}

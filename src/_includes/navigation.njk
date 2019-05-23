@@ -1,0 +1,16 @@
+      <nav role="navigation" class="mainnav">
+        <ul class="nav">
+          <li class="nav-item{% if nav.url == page.url %} nav-item-active{% endif %}">
+            <a {% if '/' == page.url %} aria-current="page" {% endif %} class="{% if '/' == page.url %} selected {% endif %}" href="/">Events</a>
+          </li>
+
+        {%- for nav in collections.nav | reverse -%}
+
+          <li class="nav-item{% if nav.url == page.url %} nav-item-active{% endif %}">
+            <a {% if nav.url == page.url %} aria-current="page" {% endif %} href="{{ nav.url | url }}" class="{% if nav.url == page.url %}selected{% endif %}">{{ nav.data.navtitle }}</a>
+          </li>
+
+        {%- endfor -%}
+
+        </ul>
+      </nav>
