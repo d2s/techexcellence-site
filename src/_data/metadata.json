@@ -1,7 +1,8 @@
 {
   "title": "Tech Excellence",
-  "url": "https://techexcellence.dev/",
+  "url": "https://techexcellence.dev",
   "description": "Tech Excellence is a series of events on technical agile and software crafting.",
+  "openGraphImage": "",
   "feed": {
     "subtitle": "Tech Excellence is a series of events on technical agile and software crafting.",
     "filename": "feed.xml",
@@ -9,8 +10,12 @@
     "url": "https://techexcellence.dev/feed/feed.xml",
     "id": "https://techexcellence.dev/"
   },
+  "options": {
+    "lang": "en-US",
+    "lang_alternative": "en-US"
+  },
   "author": {
     "name": "Tech Excellence",
-    "email": "youremailaddress@example.com"
+    "email": "miipyhajarvi@gmail.com"
   }
 }

@@ -6,7 +6,11 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{{ renderData.title or title or metadata.title }}</title>
+
+    {% set pagetitle = renderData.title or title or metadata.title %}
+    {% set pagedescription = description or metadata.description %}
+
+    <title>{{ pagetitle }}</title>
 
     <link rel="preload" href="/assets/css/normalize.css" as="style">
     <link rel="preload" href="/assets/css/style.css" as="style">
@@ -17,48 +21,64 @@
 
     <script type="text/javascript" src="/assets/js/testing.js"></script>
 
-    <!-- Consolidate duplicate URLs: -->
-    <!-- - https://support.google.com/webmasters/answer/139066?hl=en  -->
-    <link rel="canonical" href="https://techexcellence.dev/"
+    {# Canonical URL structure is defined based on the site section. #}
+    {% if permalink == "/" %}
+      {% set canonicalUrl = metadata.url %}
+    {% else %}
+      {% set canonicalUrl = metadata.url + page.url %}
+    {% endif %}
 
+    {# Consolidate duplicate URLs: #}
+    {# - https://support.google.com/webmasters/answer/139066?hl=en #}
+    <link rel="canonical" href="{{ canonicalUrl }}">
 
-    <!-- common social tags -->
-    <meta name="title" content="{{ renderData.title or title or metadata.title }}">
-    <!-- OpenGraph http://ogp.me/ -->
+    {# OpenGraph http://ogp.me/ #}
+    {% if section == "articles" %}
+    <meta property="og:type" content="blog">
+    {% else %}
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Tech Excellence">
+    {% endif %}
 
-    <!-- Twitter Card -->
-    <!-- https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started.html -->
-    <!-- - https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/summary -->
+    <meta property="og:url" content="{{ canonicalUrl }}">
+    <meta property="og:title" content="{{ pagetitle }}">
+    <meta property="og:description" content="{{ pagedescription }}">
+    <meta property="og:site_name" itemprop="name" content="{{ metadata.title }}">
+    <meta property="og:locale" content="{{ metadata.options.lang }}">
+    {# <meta property="og:locale:alternate" content="{{ metadata.options.lang_alternative }}"> #}
+    <meta property="og:image" content="{{ openGraphImage or metadata.openGraphImage }}">
+    <meta property="og:image:width" content="1200">
+
+    {# Twitter Card #}
+    {# - https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started.html #}
+    {# - https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/summary #}
     <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ pagetitle }}">
+    <meta name="twitter:description" content="{{ pagedescription }}">
 
-    <!-- document-specific social tags -->
-    <meta property="og:title" content="{{ renderData.title or title or metadata.title }}">
-    <meta name="twitter:title" content="{{ renderData.title or title or metadata.title }}">
+    {# Common social tags #}
+    <meta name="title" content="{{ pagetitle }}">
+    <meta name="description" content="{{ pagedescription }}">
 
-    <!-- document-specific description of the contents -->
-    <meta property="og:description" content="...">
-    <meta name="twitter:description" content="...">
-    <meta name="description" content="...">
 
-    <!-- icons -->
-    <link rel="apple-touch-icon" sizes="57x57" href="/assets/images/icons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/assets/images/icons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/assets/images/icons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/assets/images/icons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/assets/images/icons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/assets/images/icons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/assets/images/icons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/assets/images/icons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/icons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/assets/images/icons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/assets/images/icons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/icons/favicon-16x16.png">
+    {% set iconpath = "/assets/images/icons" %}
+
+    {# Icons #}
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ iconpath }}/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ iconpath }}/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ iconpath }}/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ iconpath }}/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ iconpath }}/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ iconpath }}/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ iconpath }}/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ iconpath }}/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ iconpath }}/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="{{ iconpath }}/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ iconpath }}/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ iconpath }}/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ iconpath }}/favicon-16x16.png">
     <link rel="manifest" href="/manifest.webmanifest">
     <meta name="msapplication-TileColor" content="#eaff00">
-    <meta name="msapplication-TileImage" content="/assets/images/icons/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="{{ iconpath }}/ms-icon-144x144.png">
     <meta name="theme-color" content="#eaff00">
 
   </head>
