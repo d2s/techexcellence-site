@@ -23,7 +23,7 @@
 
 
     <!-- common social tags -->
-    <meta name="title" content="Tech Excellence events">
+    <meta name="title" content="{{ renderData.title or title or metadata.title }}">
     <!-- OpenGraph http://ogp.me/ -->
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Tech Excellence">
@@ -34,8 +34,8 @@
     <meta name="twitter:card" content="summary">
 
     <!-- document-specific social tags -->
-    <meta property="og:title" content="Tech Excellence events">
-    <meta name="twitter:title" content="Tech Excellence events">
+    <meta property="og:title" content="{{ renderData.title or title or metadata.title }}">
+    <meta name="twitter:title" content="{{ renderData.title or title or metadata.title }}">
 
     <!-- document-specific description of the contents -->
     <meta property="og:description" content="...">
