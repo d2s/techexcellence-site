@@ -169,9 +169,13 @@ h6 {
 
 /* Image elements */
 img {
-  border-radius: 100%;
   max-width: 100%;
 }
+
+img.rounded {
+  border-radius: 100%;
+}
+
 
 .logo {
   width: 100%;

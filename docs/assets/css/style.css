@@ -169,14 +169,20 @@ h6 {
 
 /* Image elements */
 img {
-  border-radius: 100%;
   max-width: 100%;
 }
 
-.logo {
-
+img.rounded {
+  border-radius: 100%;
 }
 
+
+.logo {
+  width: 100%;
+}
+
+
+/* Visited links */
 a:visited {
   color: #007cb7;
 }
