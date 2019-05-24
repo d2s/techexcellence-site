@@ -72,91 +72,293 @@ navtitle: Conference
       <section>
         <h3>Program</h3>
 
-<table>
-  <tr>
-    <td class="time"> 8:30 - 9:15 </td>
-    <td> Registration and Breakfast </td>
-  </tr>
-  <tr>
-    <td class="time"> 9:15 - 9:30 </td>
-    <td> Conference Opening </td>
-  </tr>
-  <tr>
-    <td class="time"> 9:30 - 10:15 </td>
-    <td> KEYNOTE: Amelié Cornélis: Get some attitude! How to become technically excellent
- </td>
- <!-- <td> Being better than yesterday, on a continuous journey - that is what being technically excellent is about. It’s a commitment to keep moving rather than a destination you arrive at. Every step takes you forward, sometimes via an unexpected path! All these steps combined take you a long way.
+        <div class="grid--5col grid--full-mobile" id="schedule">
+          <dl class="schedule">
+            <dt class="schedule--title">8:30 – 9:15</dt>
+            <dd class="schedule--definition">
+              <div class="session">
+                <h4 class="heading">
+                  <div class="text" id="registration">
+                    <span class="break">Registration and Breakfast</span>
+                  </div>
+                  <a class="heading--anchor-select" href="#registration">#</a>
+                </h4>
+                {# <div>
+                  <p>
+                    Description about Registration and Breakfast
+                  </p>
+                </div> #}
+              </div>
+            </dd>
 
-There are so many things to learn that people sometimes feel overwhelmed. There is an infinite number of directions and paths to choose from, but what you choose isn’t the point. The point is that you keep going, don’t stop and help others on their journey where you can. The combined effect of these improvements is what truly unlocks excellency.
+            <dt class="schedule--title">9:15 – 9:30</dt>
+            <dd class="schedule--definition">
+              <div class="session">
+                <h4 class="heading">
+                  <div class="text" id="opening">
+                    <span class="session_name">Conference Opening</span>
+                  </div>
+                  <a class="heading--anchor-select" href="#opening">#</a>
+                </h4>
+                {# <div class="schedule--description">
+                  <p>
+                    Description about Conference Opening
+                  </p>
+                </div> #}
+              </div>
+            </dd>
 
-In this talk, you learn from my lessons on the practical stepping stones that are helping along the way, such as deliberate practice with targeted exercises or code retreats, reflecting with peers both in and out of work, and raising self awareness: how best do *you* learn.
 
-One does not simply… become excellent. It takes work and this talk shed lights on some of the necessary steps.
-</td>-->
-  </tr>
-  <tr>
-    <td class="time"> 10:15 - 10:30 </td>
-    <td> Break </td>
-  </tr>
-  <tr>
-    <td class="time"> 10:30 - 11:15 </td>
-    <td> Roundtable: Learning from Peers </td>
-  </tr>
-  <tr>
-    <td class="time"> 11:15 - 11:45 </td>
-    <td> Esko Luontola: Listen to the Tests - from CRUD to Event Sourcing </td>
-  </tr>
-  <tr>
-    <td class="time"> 11:45 - 12:45 </td>
-    <td> Lunch </td>
-  </tr>
-  <tr>
-    <td class="time"> 12:45 - 13:15 </td>
-    <td> Anssi Lehtelä: Mob Deep - Lessons from Group Development </td>
-  </tr>
-  <tr>
-    <td class="time"> 13:15 - 13:45 </td>
-    <td> Maaret Pyhäjärvi: Internal Open Source - How Far Can We Get without Pairing/Mobbing?</td>
-  </tr>
-  <tr>
-    <td class="time"> 13:45 - 14:00 </td>
-    <td> Break </td>
-  </tr>
-  <tr>
-    <td class="time"> 14:00 - 14:30 </td>
-    <td> Dmitry Ledebev: How Your Org Structure Shapes Your Architecture</td>
-<!--    <td>Have you ever wondered how structural patterns in your organization affect an architecture of your product or service? According to Melvin Conway, the organizational structures manifest themselves in org’s software product structure. In other words, dysfunctional organization would produce dysfunctional software architecture. Let’s try to examine different organizational structures and see how they can affect our architecture. Dmitry will review real life examples, explaining which org structures support good kind architecture and which structures are making this nearly impossible to work.</td>-->
-  </tr>
-<tr>
-  <td class="time"> 14:30 - 15:00 </td>
-  <td> Marcia Villalba: Serverless Monitoring </td>
-  <!-- <td>In this talk we will focus on Serverless monitoring. Monitoring is one of the four pillars of observability. We will start the talk with the basics of monitoring and move towards how to do it for Serverless applications. We will learn some good practices to build a Serverless application that can be monitored and how to create good metrics for Serverless applications.
-We will focus on Serverless applications on AWS and the tools that AWS provides to monitor these applications.Finally we will take a look at some of the available tools that are in the market to do this.</td>-->
-</tr>
-<tr>
-  <td class="time"> 15:00 - 15:30 </td>
-  <td> Afternoon Snack and Coffee </td>
-</tr>
-<tr>
-  <td class="time"> 15:30 - 16:00 </td>
-  <td> Aki Salmi: Railroad-Driven Programming </td>
-  <!-- <td>Tired of if-statements cluttering up your code? In this talk, you will be guided to railroad tracks - web app designed and implemented functionally using heavily Either Monads. Everything is either a Success or Error, or rather a Future of Success or Errors. During the talk, few monads are discussed, like Maybe and Either, using examples from SanctuaryJS (which is used in the app). Also some good practices that makes the domain code easy to understand. The talk will be based on real code that runs in production. </td>-->
-</tr>
-<tr>
-  <td class="time"> 16:00 - 16:05 </td>
-  <td> Break </td>
-</tr>
-<tr>
-  <td class="time"> 16:05 - 16:50 </td>
-  <td> KEYNOTE: Romeu Moura: Bourdieu's Social Theory and Our Work in Tech </td>
-</tr>
-<!-- <tr>We know psychological safety is necessary for any working team to work But how achievable is it? I posit that due to our current blind spots our visions on that are naïve. Let's dig together on why! tis time for some Sociological Theory, let's Vulgarise Bourdieu! Buckle up for a keynote on
-Symbolic Violence. Social/Corporeal Hexis. Cultural Capital. Interactions of those 3 and "Agile" Methods.</tr>-->
-<tr>
-  <td class="time"> 16:50 - 17:00 </td>
-  <td> Conference Closing </td>
-</tr>
-</table>
+            <dt class="schedule--title">9:30 – 10:15</dt>
+            <dd class="schedule--definition">
+              <div class="session">
+                <h4 class="heading">
+                  <div class="text" id="amelie">
+                    <span class="keynote">KEYNOTE:</span>
+                    <span class="speaker">Amelié Cornélis:</span>
+                    <span class="session_name">Get some attitude! How to become technically excellent</span>
+                  </div>
+                  <a class="heading--anchor-select" href="#amelie">#</a>
+                </h4>
+                <div class="schedule--description">
+                  <p>
+                    Being better than yesterday, on a continuous journey - that is what being technically excellent is about. It’s a commitment to keep moving rather than a destination you arrive at. Every step takes you forward, sometimes via an unexpected path! All these steps combined take you a long way.
+                  </p>
+                  <p>
+                    There are so many things to learn that people sometimes feel overwhelmed. There is an infinite number of directions and paths to choose from, but what you choose isn’t the point. The point is that you keep going, don’t stop and help others on their journey where you can. The combined effect of these improvements is what truly unlocks excellency.
+                  </p>
+                  <p>
+                    In this talk, you learn from my lessons on the practical stepping stones that are helping along the way, such as deliberate practice with targeted exercises or code retreats, reflecting with peers both in and out of work, and raising self awareness: how best do *you* learn.
+                  </p>
+                  <p>
+                    One does not simply… become excellent. It takes work and this talk shed lights on some of the necessary steps.
+                  </p>
+                </div>
+              </div>
+            </dd>
+
+
+            <dt class="schedule--title">10:15 – 10:30</dt>
+            <dd class="schedule--definition">
+              <div class="session">
+                <h4 class="heading">
+                  <div class="text" id="break1">
+                    <span class="break">Break</span>
+                  </div>
+                  <a class="heading--anchor-select" href="#break1">#</a>
+                </h4>
+              </div>
+            </dd>
+
+            <dt class="schedule--title">10:30 – 11:15</dt>
+            <dd class="schedule--definition">
+              <div class="session">
+                <h4 class="heading">
+                  <div class="text" id="roundtable">
+                    <span class="session_name">Roundtable: Learning from Peers</span>
+                  </div>
+                  <a class="heading--anchor-select" href="#roundtable">#</a>
+                </h4>
+              </div>
+            </dd>
+
+            <dt class="schedule--title">10:15 – 10:30</dt>
+            <dd class="schedule--definition">
+              <div class="session">
+                <h4 class="heading">
+                  <div class="text" id="break1">
+                    <span class="break">Break</span>
+                  </div>
+                  <a class="heading--anchor-select" href="#break1">#</a>
+                </h4>
+              </div>
+            </dd>
+
+
+            <dt class="schedule--title">11:15 – 11:45</dt>
+            <dd class="schedule--definition">
+              <div class="session">
+                <h4 class="heading">
+                  <div class="text" id="esko">
+                    <span class="speaker">Esko Luontola:</span>
+                    <span class="session_name">Listen to the Tests - from CRUD to Event Sourcing</span>
+                  </div>
+                  <a class="heading--anchor-select" href="#esko">#</a>
+                </h4>
+              </div>
+            </dd>
+
+            <dt class="schedule--title">11:45 – 12:45</dt>
+            <dd class="schedule--definition">
+              <div class="session">
+                <h4 class="heading">
+                  <div class="text" id="lunch">
+                    <span class="break">Lunch</span>
+                  </div>
+                  <a class="heading--anchor-select" href="#lunch">#</a>
+                </h4>
+              </div>
+            </dd>
+
+            <dt class="schedule--title">12:45 – 13:15</dt>
+            <dd class="schedule--definition">
+              <div class="session">
+                <h4 class="heading">
+                  <div class="text" id="anssi">
+                    <span class="speaker">Anssi Lehtelä:</span>
+                    <span class="session_name">Mob Deep - Lessons from Group Development</span>
+                  </div>
+                  <a class="heading--anchor-select" href="#anssi">#</a>
+                </h4>
+              </div>
+            </dd>
+
+            <dt class="schedule--title">13:15 – 13:45</dt>
+            <dd class="schedule--definition">
+              <div class="session">
+                <h4 class="heading">
+                  <div class="text" id="maaret">
+                    <span class="speaker">Maaret Pyhäjärvi:</span>
+                    <span class="session_name">Internal Open Source - How Far Can We Get without Pairing/Mobbing?</span>
+                  </div>
+                  <a class="heading--anchor-select" href="#maaret">#</a>
+                </h4>
+              </div>
+            </dd>
+
+            <dt class="schedule--title">13:45 – 14:00</dt>
+            <dd class="schedule--definition">
+              <div class="session">
+                <h4 class="heading">
+                  <div class="text" id="break2">
+                    <span class="break">Break</span>
+                  </div>
+                  <a class="heading--anchor-select" href="#break2">#</a>
+                </h4>
+              </div>
+            </dd>
+
+            <dt class="schedule--title">14:00 – 14:30</dt>
+            <dd class="schedule--definition">
+              <div class="session">
+                <h4 class="heading">
+                  <div class="text" id="dmitry">
+                    <span class="speaker">Dmitry Ledebev:</span>
+                    <span class="session_name">How Your Org Structure Shapes Your Architecture</span>
+                  </div>
+                  <a class="heading--anchor-select" href="#dmitry">#</a>
+                </h4>
+                <div class="schedule--description">
+                  <p>
+                    Have you ever wondered how structural patterns in your organization affect an architecture of your product or service? According to Melvin Conway, the organizational structures manifest themselves in org’s software product structure. In other words, dysfunctional organization would produce dysfunctional software architecture. Let’s try to examine different organizational structures and see how they can affect our architecture. Dmitry will review real life examples, explaining which org structures support good kind architecture and which structures are making this nearly impossible to work.
+                  </p>
+                </div>
+              </div>
+            </dd>
+
+            <dt class="schedule--title">14:30 – 15:00</dt>
+            <dd class="schedule--definition">
+              <div class="session">
+                <h4 class="heading">
+                  <div class="text" id="marcia">
+                    <span class="speaker">Marcia Villalba:</span>
+                    <span class="session_name">Serverless Monitoring</span>
+                  </div>
+                  <a class="heading--anchor-select" href="#marcia">#</a>
+                </h4>
+                <div class="schedule--description">
+                  <p>
+                    In this talk we will focus on Serverless monitoring. Monitoring is one of the four pillars of observability. We will start the talk with the basics of monitoring and move towards how to do it for Serverless applications. We will learn some good practices to build a Serverless application that can be monitored and how to create good metrics for Serverless applications.
+                  </p>
+                  <p>
+                    We will focus on Serverless applications on AWS and the tools that AWS provides to monitor these applications.Finally we will take a look at some of the available tools that are in the market to do this.
+                  </p>
+                </div>
+              </div>
+            </dd>
+
+            <dt class="schedule--title">15:00 – 15:30</dt>
+            <dd class="schedule--definition">
+              <div class="session">
+                <h4 class="heading">
+                  <div class="text" id="afternoon_coffee">
+                    <span class="break">Afternoon Snack and Coffee</span>
+                  </div>
+                  <a class="heading--anchor-select" href="#afternoon_coffee">#</a>
+                </h4>
+                {# <div class="schedule--description">
+                </div> #}
+              </div>
+            </dd>
+
+            <dt class="schedule--title">15:30 – 16:00</dt>
+            <dd class="schedule--definition">
+              <div class="session">
+                <h4 class="heading">
+                  <div class="text" id="afternoon_coffee">
+                    <span class="speaker">Aki Salmi:</span>
+                    <span class="session_name">Railroad-Driven Programming</span>
+                  </div>
+                  <a class="heading--anchor-select" href="#afternoon_coffee">#</a>
+                </h4>
+                <div class="schedule--description">
+                  <p>
+                    Tired of if-statements cluttering up your code? In this talk, you will be guided to railroad tracks - web app designed and implemented functionally using heavily Either Monads. Everything is either a Success or Error, or rather a Future of Success or Errors. During the talk, few monads are discussed, like Maybe and Either, using examples from SanctuaryJS (which is used in the app). Also some good practices that makes the domain code easy to understand. The talk will be based on real code that runs in production.
+                  </p>
+                </div>
+              </div>
+            </dd>
+
+            <dt class="schedule--title">16:00 – 16:05</dt>
+            <dd class="schedule--definition">
+              <div class="session">
+                <h4 class="heading">
+                  <div class="text" id="break3">
+                    <span class="break">Break</span>
+                  </div>
+                  <a class="heading--anchor-select" href="#break3">#</a>
+                </h4>
+                {# <div class="schedule--description">
+                </div> #}
+              </div>
+            </dd>
+
+            <dt class="schedule--title">16:05 – 16:50</dt>
+            <dd class="schedule--definition">
+              <div class="session">
+                <h4 class="heading">
+                  <div class="text" id="afternoon_coffee">
+                    <span class="keynote">KEYNOTE:</span>
+                    <span class="speaker">Romeu Moura:</span>
+                    <span class="session_name">Bourdieu's Social Theory and Our Work in Tech</span>
+                  </div>
+                  <a class="heading--anchor-select" href="#afternoon_coffee">#</a>
+                </h4>
+                {# <div class="schedule--description">
+                  <p>
+                    We know psychological safety is necessary for any working team to work But how achievable is it? I posit that due to our current blind spots our visions on that are naïve. Let's dig together on why! tis time for some Sociological Theory, let's Vulgarise Bourdieu! Buckle up for a keynote on Symbolic Violence. Social/Corporeal Hexis. Cultural Capital. Interactions of those 3 and "Agile" Methods.
+                  </p>
+                </div> #}
+              </div>
+            </dd>
+
+            <dt class="schedule--title">16:50 – 17:00</dt>
+            <dd class="schedule--definition">
+              <div class="session">
+                <h4 class="heading">
+                  <div class="text" id="closing">
+                    <span class="session_name">Conference Closing</span>
+                  </div>
+                  <a class="heading--anchor-select" href="#closing">#</a>
+                </h4>
+                {# <div class="schedule--description">
+                </div> #}
+              </div>
+            </dd>
+
+          </dl>
+        </div>
+
 
       </section>
 
