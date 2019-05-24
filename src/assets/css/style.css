@@ -336,7 +336,6 @@ p.intro {
   grid-column: 2 / span 5;
 }
 
-
 #schedule .legend--label {
   margin-right: 1.5em;
   display: inline-block;
@@ -344,10 +343,6 @@ p.intro {
 
 #schedule .legend--title {
   white-space: nowrap;
-}
-
-#schedule .icon-abbr {
-  margin-right: 0.25em;
 }
 
 .schedule {
