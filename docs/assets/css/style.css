@@ -1,7 +1,8 @@
 * {
   /* - Enable outline for debugging layout structure issues */
   /* outline: 1px solid #2980b9!important; */
-  /* box-sizing: border-box; */
+
+  box-sizing: border-box;
 }
 
 html {
@@ -57,7 +58,6 @@ body {
 /*
  * A better looking default horizontal rule
  */
-
 hr {
   display: block;
   height: 1px;
@@ -72,7 +72,6 @@ hr {
  * images, videos and the bottom of their containers:
  * https://github.com/h5bp/html5-boilerplate/issues/440
  */
-
 audio,
 canvas,
 iframe,
@@ -85,7 +84,6 @@ video {
 /*
  * Remove default fieldset styles.
  */
-
 fieldset {
   border: 0;
   margin: 0;
@@ -95,7 +93,6 @@ fieldset {
 /*
  * Allow only vertical resizing of textareas.
  */
-
 textarea {
   resize: vertical;
 }
@@ -142,7 +139,7 @@ h3 {
   background-image: linear-gradient(
     to bottom,
     rgba(255, 255, 255, 1) 0%,
-    rgba(255, 205, 184, 0.6) 100%
+    rgb(70, 198, 198, 0.6) 100%
   );
 }
 
@@ -173,14 +170,20 @@ h6 {
 
 /* Image elements */
 img {
-  border-radius: 100%;
   max-width: 100%;
 }
 
-.logo {
-
+img.rounded {
+  border-radius: 100%;
 }
 
+
+.logo {
+  width: 100%;
+}
+
+
+/* Visited links */
 a:visited {
   color: #007cb7;
 }
@@ -324,6 +327,169 @@ p.intro {
   box-shadow: 0 0 10px 2px rgba(120, 120, 120, 0.5), inset 0 0 15px rgba(50, 50, 50, 0.5);
 }
 
+
+/* ==========================================================================
+   Schedule timetable
+   ========================================================================== */
+
+.grid--5col {
+  grid-column: 2 / span 5;
+}
+
+
+#schedule .legend--label {
+  margin-right: 1.5em;
+  display: inline-block;
+}
+
+#schedule .legend--title {
+  white-space: nowrap;
+}
+
+#schedule .icon-abbr {
+  margin-right: 0.25em;
+}
+
+.schedule {
+  position: relative;
+}
+.schedule--title {
+  margin-bottom: 0.5em;
+  font-size: 1.1em;
+  padding: 4px 0 4px 10px;
+  font-weight: 700;
+  background-color: rgb(85, 108, 151);
+  color: #fff;
+  width: 100%;
+  margin-bottom: 0;
+  border-bottom: 1px solid lightgray;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+}
+
+@media (min-width: 776px) {
+  .schedule {
+    position: relative;
+    margin-left: 200px;
+  }
+  .schedule--title {
+    position: absolute;
+    left: -130px;
+    width: 130px;
+    line-height: 2rem;
+  }
+  .schedule--title::after {
+    position: absolute;
+    top: 0.75em;
+    left: 106px;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #ddd;
+    -webkit-box-shadow: 0 0 0 2px #fff;
+    box-shadow: 0 0 0 2px #fff;
+    z-index: 1;
+  }
+}
+
+.schedule--description {
+  padding-bottom: 10px;
+}
+
+.schedule--description p {
+  margin: 0 20px 10px 20px;
+}
+
+.schedule--title.workshop::after,
+.schedule--title.keynote::after,
+.schedule--title.panel::after,
+.schedule--title.talk::after {
+  background-color: #002fa9;
+}
+
+.schedule--title.breakfast::after,
+.schedule--title.lunch::after,
+.schedule--title.coffee_break::after {
+  background-color: brown;
+}
+
+.schedule--title.lightning_talk::after {
+  background-color: yellow;
+}
+
+.schedule--title.party::after,
+.schedule--title.organizational::after {
+  background-color: blue;
+}
+
+.schedule--definition {
+  position: relative;
+  margin: 0;
+}
+
+.schedule--definition h3 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+.schedule--definition h4 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  background-color: #d7e5ff;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+}
+
+.schedule--definition p {
+  margin-top: 0;
+  margin-bottom: 0.6rem;
+}
+
+.schedule abbr {
+  margin-right: 0.5em;
+}
+
+/** - Link for jumping to individual schedule item */
+a.heading--anchor-select {
+  float: right;
+  color: #5783f1;
+}
+a.heading--anchor-select:hover,
+a.heading--anchor-select:active {
+  color: #022785;
+}
+
+
+h4.heading .text {
+  font-weight: 500;
+}
+
+span.break {
+  font-weight: 700;
+  color: rgb(131, 105, 138);
+  font-size: 1em;
+}
+
+span.keynote {
+  font-weight: 500;
+  font-size: 0.8em;
+}
+
+span.speaker {
+  font-weight: 700;
+  display: block;
+  font-style: italic;
+  color: #770352;
+}
+
+span.session_name {
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
 /* For debugging section areas: */
 /*
 section {
@@ -331,9 +497,6 @@ section {
 }
 */
 
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
 
 /*
  * Hide visually and from screen readers

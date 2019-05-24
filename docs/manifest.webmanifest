@@ -5,7 +5,7 @@
   "lang": "en-US",
   "display": "minimal-ui",
   "start_url": "/?utm_source=homescreen",
-  "background_color": "#c8ccce",
+  "background_color": "#46C6C6",
   "theme_color": "#111111",
   "icons": [
     {

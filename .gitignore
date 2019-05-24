@@ -32,3 +32,5 @@ debug.log*
 
 # Various other files
 .DS_Store
+src-old/
+*index-old*
